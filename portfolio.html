@@ -28,7 +28,7 @@
             <div class="icon twitter"><i class="fa fa-twitter"></i></div>
             <div class="icon google-plus"><i class="fa fa-google-plus"></i></div>
             <div class="icon pinterest last"><i class="fa fa-pinterest-p"></i></div>
-            <div class="label">Share</div>
+            <div class="label">Social</div>
         </div>
         <header class="top-nav-bar">
             <div id="toggle">
@@ -62,30 +62,32 @@
             </div>
         </div>
 
-        <div id="galleryWithRide" class="section-padding">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <a href="boresbrother.html"> 
-                <img src="images/bordas/1.jpg" alt="first slide">
+        <div id="myCarousel" class="section-padding">
+            <div class="containerCarousel">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div id="myCarousel" class="carousel slide" >
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="boresbrother.html"> 
+                <img src="images/bordascarousel/c1.jpg" alt="first slide">
             </a>
-                            </div>
-                            <div class="item">
-                                <a href="boresbrother.html"> 
-                <img src="images/bordas/2.jpg" alt="second slide">
+                                </div>
+                                <div class="item">
+                                    <a href="boresbrother.html"> 
+                <img src="images/bordascarousel/c2.jpg" alt="second slide">
             </a>
-                            </div>
-                            <div class="item">
-                                <a href="boresbrother.html">
-                <img src="images/bordas/3.jpg"  alt="third slide">
+                                </div>
+                                <div class="item">
+                                    <a href="boresbrother.html">
+                <img src="images/bordascarousel/c3.jpg"  alt="third slide">
             </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,8 +159,8 @@
             var userFeed = new Instafeed({
                 get: 'user',
                 userId: '7133731715',
-                accessToken: '4828631159.1677ed0.79cec29b3ab94404ad45f640b87dc4ef',
-                limit: '12',
+                accessToken: '7133731715.1677ed0.f0d1ac54b9da48d4977f3a3f62b0fa4e',
+                limit: '8',
                 sortBy: 'most-recent',
                 after: function() {
                     var images = $("#instafeed").find('a');

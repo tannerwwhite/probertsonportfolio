@@ -1,5 +1,5 @@
 
-
+//scroll to top 
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -14,9 +14,30 @@ $(document).ready(function() {
     });
 
 
+    
+    //menu slider 
     $("#toggle").click(function() {
         $(this).toggleClass("on");
         $("#menu").slideToggle();
     });
 
+});
+
+//Carousel Hover Controller
+$('#containerCarousel').carousel({
+    interval: false
+});
+
+var i;
+
+$('.carousel-inner').on("mouseover", function () {
+    var control = $(this),
+        interval = 500;
+
+    i = setInterval(function () {
+        control.trigger("click");
+    }, interval);
+})
+.on("mouseout", function () {
+    clearInterval(i);
 });
