@@ -212,7 +212,7 @@ p {
 #toggle div {
     width: 100%;
     height: 3px;
-    background: #ff5200;
+    background: white;
     margin: 5px auto;
     transition: all 0.3s;
     backface-visibility: hidden;
@@ -285,6 +285,25 @@ p {
     margin-bottom: 50px;
 }
 
+/*carousel style*/
+.carousel-fullscreen .carousel-inner .item {
+    height: 100vh; 
+    min-height: 600px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    object-fit: fill;
+}
+#myCarousel{
+    height: 400px;
+    widows: 400px;
+        
+}
+
+.containerCarousel{
+    height: 400px;
+    widows: 400px;
+}
 
 /*gallery block*/
 
