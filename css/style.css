@@ -314,6 +314,7 @@ img {
 
 .port-image {
     position: relative;
+    padding-bottom: 30px;
 }
 
 .image-responsive {
@@ -862,7 +863,7 @@ footer {
 }
 
 .label {
-    border-radius: 1rem;
+    border-radius: 2rem;
     font-size: 13px;
     font-weight: 700;
     left: 0;
